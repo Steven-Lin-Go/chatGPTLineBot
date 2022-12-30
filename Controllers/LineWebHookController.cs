@@ -13,12 +13,12 @@ namespace isRock.Template
         [HttpPost]
         public IActionResult POST()
         {
-            var AdminUserId = "__________U15ef34de67ebaa8b0556a0d1b69f23c1________________";
+            var AdminUserId = "U15ef34de67ebaa8b0556a0d1b69f23c1";
 
             try
             {
                 //設定ChannelAccessToken
-                this.ChannelAccessToken = "______________jyY4mZqNgPpIpZQRfZLI4g4HovrHFk0f4ogvGTedVDfrbFb8gy391aW5IETaXbUAx5uQd5krmM4oJF4jMZHHB4alFEQJ8UwSMrZg273SKfcV1XdeYP5Re+mTXXnj//rMgD3C1/BgMNprNp8agjiZAgdB04t89/1O/w1cDnyilFU=______________";
+                this.ChannelAccessToken = "jyY4mZqNgPpIpZQRfZLI4g4HovrHFk0f4ogvGTedVDfrbFb8gy391aW5IETaXbUAx5uQd5krmM4oJF4jMZHHB4alFEQJ8UwSMrZg273SKfcV1XdeYP5Re+mTXXnj//rMgD3C1/BgMNprNp8agjiZAgdB04t89/1O/w1cDnyilFU=";
                 //配合Line Verify
                 if (ReceivedMessage.events == null || ReceivedMessage.events.Count() <= 0 ||
                     ReceivedMessage.events.FirstOrDefault().replyToken == "00000000000000000000000000000000") return Ok();
