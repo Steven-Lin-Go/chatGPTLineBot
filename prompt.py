@@ -2,8 +2,8 @@ import os
 chat_language = os.getenv("INIT_LANGUAGE", default = "zh")
 MSG_LIST_LIMIT = int(os.getenv("MSG_LIST_LIMIT", default = 20))
 LANGUAGE_TABLE = {
-  "zh": "嗨！",
-  "en": "Hi!"
+  "zh": "嗨！您好，一起聊聊吧。",
+  "en": "Hi! Let's talk!",
 }
 class Prompt:
     def __init__(self):

@@ -21,7 +21,7 @@ namespace isRock.Template
                 this.ChannelAccessToken = "jyY4mZqNgPpIpZQRfZLI4g4HovrHFk0f4ogvGTedVDfrbFb8gy391aW5IETaXbUAx5uQd5krmM4oJF4jMZHHB4alFEQJ8UwSMrZg273SKfcV1XdeYP5Re+mTXXnj//rMgD3C1/BgMNprNp8agjiZAgdB04t89/1O/w1cDnyilFU=";
                 //配合Line Verify
                 if (ReceivedMessage.events == null || ReceivedMessage.events.Count() <= 0 ||
-                    ReceivedMessage.events.FirstOrDefault().replyToken == "200") return Ok();
+                    ReceivedMessage.events.FirstOrDefault().replyToken == "00000000000000000000000000000000") return Ok();
                 //取得Line Event
                 var LineEvent = this.ReceivedMessage.events.FirstOrDefault();
                 var responseMsg = "";
